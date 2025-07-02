@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodePro Tech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* style.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #00f7ff;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Services */
+.services {
+  margin: 80px auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background-color: #e3f2fd;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+}
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>CodePro Tech</h1>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Innovative Tech Solutions</h2>
+      <p>We deliver AI, Web, and IoT solutions for the future.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>Modern, scalable websites tailored to your business.</p>
+    </div>
+    <div class="service-card">
+      <h3>AI Automation</h3>
+      <p>Automate operations with custom AI workflows.</p>
+    </div>
+    <div class="service-card">
+      <h3>Cloud & IoT</h3>
+      <p>Smart integration of devices and cloud platforms.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 CodePro Tech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
